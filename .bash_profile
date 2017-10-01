@@ -10,6 +10,17 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
-export ANDROID_HOME=$HOME/Library/Android/sdk
+alias grao='git remote add origin'
+alias grro='git remote remove origin'
+alias gic='git init; git add .; git commit -m "initial commit"'
+alias gpm='git add .; git commit -m "update"; git push origin master;'
+alias gpd='git add .; git commit -m "update"; git push origin develop;'
+alias gs='git status'
+alias gb='git branch'
+alias gcb='git checkout -b'
+alias ga='git add .'
+alias gc='git add .; git commit -m "update"'
+alias gpo='git add .; git commit -m "update"; git push origin '
+alias gd='git diff'
+export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
 
-export PATH=${PATH}:$HOME/Library/Android/sdk/platform-tools:$HOME/Library/Android/sdk/tools

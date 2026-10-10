@@ -10,6 +10,7 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
+alias gpoh='git push origin HEAD'
 alias grao='git remote add origin'
 alias grro='git remote remove origin'
 alias gic='git init; git add .; git commit -m "initial commit"'
